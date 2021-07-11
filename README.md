@@ -9,7 +9,7 @@ Principle of work but from the user side should look like:
 * To write any data in memory, you need to access the RAM with data and address in which we want to write.
 * To access the data, we have to adress to cache. If the cache cannot find the necessary data, then it accesses the RAM by copying data from there.
 
-When working with Verilog, it should be understood that each individual block of the program is represented as a module. As you know, the cache is not an independent part of fast memory, and for its proper operation it needs to take data from another memory block - RAM. Therefore, in order to simulate the work of the cache at the FPGA, we have to simulate whole RAM module which includes cache as well, but the main point is cache simulation. 
+When working with Verilog, it should be understood that each individual block of the program is represented as a module. As you know, the cache is not an independent part of fast memory, and for its proper operation it needs to take data from another memory block - RAM. Therefore, in order to simulate the work of the cache at the FPGA, we have to simulate whole RAM module which includes cache as well, but the main point is cache simulation.
 
 The implementation consists of such modules:
 * ram.v - RAM memory module
